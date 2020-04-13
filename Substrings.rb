@@ -6,7 +6,9 @@ def substrings(text,dictionary)
         #puts word
         occs=text.scan(word)
         #puts occs
-        ret_hash[word]=occs.length
+        if(occs.length>0)
+            ret_hash[word]=occs.length
+        end
     end
 
     return ret_hash
